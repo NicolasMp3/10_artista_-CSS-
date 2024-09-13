@@ -11,7 +11,9 @@ header, #principal, #second, #contato, #stream {
   align-items: center;
   justify-content: center;
 }
-
+#logo {
+  width: 100px;
+}
 #second img{
   background-color: #fff;
   border: 50px;
@@ -22,9 +24,15 @@ header, #principal, #second, #contato, #stream {
   align-items: center;
   justify-content: center;
 }
-.link-menu.inicio {
-  background-color: #333; 
-  border: 2px solid #333;
+.link-menu {
+  color: #fff;
+  background-color: #555;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  color: #fff;
 }
 .link-menu.f {
   background-color: #5b305a; 
@@ -38,16 +46,7 @@ header, #principal, #second, #contato, #stream {
   background-color: #e04b5a;
   border: 2px solid #e04b5a;
 }
-.link-menu {
-  color: #fff;
-  background-color: #555;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 5px;
-  display: inline-block;
-  color: #fff;
-}
+
 #principal {
   background-color: #333;
   color: #fff;
@@ -61,7 +60,13 @@ header, #principal, #second, #contato, #stream {
   height: auto;
   margin-right: 20px;
 }
-
+#menu { 
+  flex-direction: row;
+  display: flex;
+  text-decoration: none;
+  margin-right: 20px;
+  
+}
 #logo img {
   height: 100px;
 }
@@ -71,7 +76,7 @@ header, #principal, #second, #contato, #stream {
   color: #fff;
   width: 100px;
   margin-right: 20px;
-  align-items: ;
+  align-items: center;
   justify-content: left;
 }
 main {
@@ -81,6 +86,17 @@ main {
 
 h1, h2 {
   font-family: 'Amatic SC';
+}
+#sec-ctd {
+  margin-left: 20px;
+}
+#sec-ctd h1 {
+  font-family: 'Amatic SC';
+  font-size: 20px;
+  text-align: right; 
+}
+#l{
+  color: black;
 }
 
 #second a{
@@ -111,11 +127,9 @@ footer {
   flex-direction: left 50px;
   justify-content: flex-end;
 }
-#sec-ctd {
-  margin-left: 20px;
+#contato {
+  padding: 10px 0 30px 40px;
 }
-#sec-ctd h1 {
-  font-family: 'Amatic SC';
-  font-size: 20px;
-  text-align: right; 
-}
+
+
+
