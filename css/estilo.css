@@ -1,66 +1,3 @@
-/*.barra-branca {
-  background-color: #fff;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-#logo-img {
-  height: 100px;  Ajuste o tamanho do logo se necessário 
-}
-#menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-.item-menu {
-  margin-right: 20px;
-}
-.link-menu {
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 5px;
-  display: inline-block;
-  color: #fff;
-}
-
-
-#sec-ctd {
-  margin-left: 20px;
-}
-#sec-ctd h1 {
-  font-family: 'Amatic SC';
-  font-size: 2em;
-  text-align: right; 
-}
-#email a {
-  color: #fff;
-  text-decoration: none;
-  margin-right: 20px;
-}
-#social a img {
-  width: 30px;
-  margin: 0 5px;
-  justify-content: flex-end;
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins&display=swap');
 
 body {
@@ -70,39 +7,46 @@ body {
 }
 
 header, #principal, #second, #contato, #stream {
-	
+	flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#second img{
+  background-color: #fff;
+  border: 50px;
+  align-items: center;
+  justify-content: center;
+}
+#cartaz {
+  align-items: center;
+  justify-content: center;
 }
 .link-menu.inicio {
-  background-color: #333; /* Cor cinza para "Início" */
-  border: 2px solid #333; /* Borda cinza */
+  background-color: #333; 
+  border: 2px solid #333;
 }
 .link-menu.f {
-  background-color: #5b305a; /* Cor roxa para "Filme" */
-  border: 2px solid #5b305a; /* Borda roxa */
+  background-color: #5b305a; 
+  border: 2px solid #5b305a;
 }
 .link-menu.l {
-  background-color: #e49756; /* Cor amarela para "Livro" */
-  border: 2px solid #e49756; /* Borda amarela */
+  background-color: #e49756;
+  border: 2px solid #e49756;
 }
 .link-menu.m {
-  background-color: #e04b5a; /* Cor vermelha para "Música" */
-  border: 2px solid #e04b5a; /* Borda vermelha */
+  background-color: #e04b5a;
+  border: 2px solid #e04b5a;
 }
 .link-menu {
   color: #fff;
   background-color: #555;
-}
-
-.f {
-  background-color: #5b305a;
-}
-
-.l {
-  background-color: #e49756;
-}
-
-.m {
-  background-color: #e04b5a;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  color: #fff;
 }
 #principal {
   background-color: #333;
@@ -117,6 +61,11 @@ header, #principal, #second, #contato, #stream {
   height: auto;
   margin-right: 20px;
 }
+
+#logo img {
+  height: 100px;
+}
+
 .cartaz img{
   flex-direction: row;
   color: #fff;
@@ -149,4 +98,24 @@ footer {
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
+}
+
+#email a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+#social a img {
+  width: 30px;
+  margin: 0 5px;
+  flex-direction: left 50px;
+  justify-content: flex-end;
+}
+#sec-ctd {
+  margin-left: 20px;
+}
+#sec-ctd h1 {
+  font-family: 'Amatic SC';
+  font-size: 20px;
+  text-align: right; 
 }
